@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div>
+
+        <input type="file" name="file" id="file" />
+        <button id="uploadFile">Upload File</button>
+    </div>
+
+
+
+    <!--<form name="formUpload">
+        <input type="file" name="file" id="file" />
+        <button type="submit">Upload File</button>
+    </form>-->
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+
+    <script>
+        //var table;
+        $(document).ready(function () {
+
+            $('#uploadFile').click(function (e) {
+                var formData = new FormData();
+
+                console.log($('#file')[0].files[0]);
+                formData.append('file', $('#file')[0].files[0]); // myFile is the input type="file" control
+                formData.append('fileName', 'Test');
+                
+                var _url = '/api/avatar';
+
+                $.ajax({
+                    url: _url,
+                    type: 'POST',
+                    data: formData,
+                    processData: false,  // tell jQuery not to process the data
+                    contentType: false,  // tell jQuery not to set contentType
+                    success: function (result) {
+                    },
+                    error: function (jqXHR) {
+                    },
+                    complete: function (jqXHR, status) {
+                    }
+                });
+            });
+
+            //$('form[name="formUpload"]').submit(function (e) {
+            //    e.preventDefault();
+
+            //    //console.log($('#file')[0].files[0]);
+
+            //    var model = new FormData($('form[name="formUpload"]').get(0));
+            //    //console.log(model);
+            //    //$('#file')[0].files[0]
+            //    $.ajax({
+            //        type: "POST",
+            //        url: "/api/avatar",
+            //        contentType: "application/json",
+            //        processData: false,
+            //        data: model,
+            //        success: function (message) {
+            //            alert(message);
+            //        },
+            //        error: function () {
+            //            alert("There was error uploading files!");
+            //        }
+            //    });
+            //});
+        });
+    </script>
+</body>
+</html>

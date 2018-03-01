@@ -1,0 +1,11 @@
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\bin\Debug\netcoreapp2.0\Driverr.Api.deps.json
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\bin\Debug\netcoreapp2.0\Driverr.Api.runtimeconfig.json
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\bin\Debug\netcoreapp2.0\Driverr.Api.runtimeconfig.dev.json
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\bin\Debug\netcoreapp2.0\Driverr.Api.dll
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\bin\Debug\netcoreapp2.0\Driverr.Api.pdb
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\obj\Debug\netcoreapp2.0\Driverr.Api.csprojResolveAssemblyReference.cache
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\obj\Debug\netcoreapp2.0\Driverr.Api.csproj.CoreCompileInputs.cache
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\obj\Debug\netcoreapp2.0\Driverr.Api.AssemblyInfoInputs.cache
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\obj\Debug\netcoreapp2.0\Driverr.Api.AssemblyInfo.cs
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\obj\Debug\netcoreapp2.0\Driverr.Api.dll
+D:\Arvin\Projects\Drivrr\drivrr-master\Driverr.Api\obj\Debug\netcoreapp2.0\Driverr.Api.pdb
